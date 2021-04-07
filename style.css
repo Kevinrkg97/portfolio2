@@ -39,7 +39,7 @@ li{
 
 header{
     padding-top: 20px;
-    width: 90%;
+    width: 95%;
     margin: auto;
     background-image: url(../images/banner.jpg);
     background-position: center;
@@ -160,10 +160,10 @@ header .more{
 
 
 #portfolio li{
-    width: 300px;
-    height: 20vh;
     margin: 30px;
     transition: 0.5s;
+    height: 25vh;
+    overflow: hidden;
 }
 
 #portfolio li:hover{
@@ -173,6 +173,7 @@ header .more{
 #portfolio img{
     width: 100%;
 }
+
 
 
 /* CONTACTO */
@@ -188,9 +189,12 @@ header .more{
 /* GRID AREAS */
 @media (min-width: 1024px){
     main{
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(4,1fr);
         display: grid;
         grid-template-areas: 'skills skills skills about'
-                                'portfolio portfolio portfolio contact';
+                            'portfolio portfolio portfolio contact';
     }
 
     #about{
@@ -208,12 +212,24 @@ header .more{
         margin: 15px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 15px;
+    }
+
+    #portfolio{
+        grid-column: 1/4;
+    }
+    #portfolio .container{
+        width: 90%;
+        margin: auto;
     }
 
     #portfolio ul{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #portfolio li{
+        height: 20vh;
+        overflow: hidden;
     }
 
 
