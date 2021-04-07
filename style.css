@@ -122,7 +122,10 @@ header .more{
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 0 10px #F9A826;
+    width: 90%;
+    margin: auto;
 }
+
 
 .bar span{
     height: 2px;
