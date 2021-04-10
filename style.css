@@ -29,7 +29,7 @@ a{
     margin: auto;
 }
 
-section{
+main{
     margin: 20px 0;
 }
 
@@ -39,7 +39,7 @@ li{
 /* BANNER */
 
 header{
-    padding-top: 20px;
+    padding: 5%;
     width: 95%;
     margin: auto;
     background-image: url(../images/banner.jpg);
@@ -72,6 +72,12 @@ header .more{
     padding-top: 20px;
     grid-column: 2/3;
     margin: 10px;
+    text-align: center;
+}
+
+header a{
+    border: 1px solid #F9A826;
+    padding: 10px;
 }
 
 
@@ -115,6 +121,14 @@ header .more{
     font-size: 25px;
 }
 
+#skills .text{
+    margin: 50px;
+}
+
+#skills .content li{
+    margin: 10px;
+}
+
 .bar{
     background: #353b48;
     display: block;
@@ -124,7 +138,7 @@ header .more{
     overflow: hidden;
     box-shadow: 0 0 10px #F9A826;
     width: 90%;
-    margin: auto;
+    margin: 5px;
 }
 
 
@@ -135,7 +149,7 @@ header .more{
 }
 
 .html{
-    width: 60%;
+    width: 75%;
 }
 
 .css{
@@ -143,15 +157,15 @@ header .more{
 }
 
 .js{
-    width: 50%;
+    width: 40%;
 }
 
 .python{
-    width: 75%;
+    width: 70%;
 }
 
 .php{
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -170,15 +184,68 @@ header .more{
     overflow: hidden;
 }
 
-#portfolio li:hover{
-    transform: translateY(-10px);
-}
-
 #portfolio img{
     width: 100%;
 }
 
+/* MODAL */
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+
+.modal.is-visible{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modalContent {
+    position: relative;
+    max-width: 800px;
+    max-height: 98%;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+.modalTitle{
+    background:rgba(27, 27, 27, 0.8);
+    padding: 10px;
+}
+
+.modal .modalTitle i{
+    font-size: 30px;
+    position: absolute;
+    color: red;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.modal .modalTitle{
+    text-align: center;
+}
+
+.modal .text{
+    background:rgba(27, 27, 27, 0.8);
+    padding: 10px;
+}
 
 /* CONTACTO */
 
