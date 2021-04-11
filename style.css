@@ -85,7 +85,7 @@ header a{
 /* ABOUT */
 
 #about{
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/bannerAbout.jpg);
     background-attachment: fixed;
     background-position: bottom;
     background-size: contain;
@@ -327,6 +327,13 @@ header a{
     display: table-column;
 }
 
+
+/* FOOTER */
+
+footer{
+    text-align: right;
+    margin: 0 10px;
+}
 
 /* GRID AREAS */
 @media (min-width: 1024px){
